@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "newLine": "lf",
+    "outDir": "dist",
+    "preserveSymlinks": true,
+    "pretty": true,
+    "removeComments": true,
+    "rootDir": "./src",
+    "target": "es5",
+    "sourceMap": true,
+    "strict": true
+  },
+  "include": ["src/**/*.ts"]
+}
