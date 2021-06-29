@@ -1,5 +1,5 @@
 {
-  "name": "base32check",
+  "name": "base32check1",
   "description": "TypeScript implementation of the Base32Check1 algorithm",
   "author": {
     "name": "Dario Blanco",
@@ -37,8 +37,9 @@
     "@commitlint/config-conventional": "^12.1.4",
     "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "base32check1": "link:./src",
     "eslint": "^7.29.0",
-    "eslint-config-kirinus": "^1.0.0-rc.5",
+    "eslint-config-kirinus": "^1.0.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.3.6",
@@ -48,6 +49,7 @@
     "eslint-plugin-unicorn": "^34.0.0",
     "husky": "^6.0.0",
     "jest": "^27.0.4",
+    "jest-environment-node": "^27.0.6",
     "prettier": "^2.3.1",
     "prettier-eslint": "^12.0.0",
     "pretty-quick": "^3.1.1",
