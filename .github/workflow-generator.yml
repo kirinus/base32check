@@ -2,7 +2,7 @@ global:
   values:
     public: true
     ytt:
-      template_paths: remote/ytt,this/.github/overlays
+      template_paths: remote/ytt
   workflows:
     - file: library.yml
     - file: pr.yml
