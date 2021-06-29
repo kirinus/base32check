@@ -1,0 +1,71 @@
+name: Publish
+"on":
+  release:
+    types:
+    - published
+  workflow_dispatch:
+    inputs:
+      version:
+        description: The version to publish
+        required: true
+env:
+  PACKAGE_JSON_FOLDER: .
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current git repository
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+    - name: Install yarn dependencies
+      run: yarn install --immutable
+    - name: Use Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.17.1
+    - name: Run build
+      id: yarn_build
+      run: yarn build
+    - name: Load version
+      id: load_version
+      run: |
+        if [ "$GITHUB_EVENT_NAME" = 'workflow_dispatch' ]
+        then
+          VERSION="${{ github.event.inputs.version }}"
+        else
+          if [ "$GITHUB_EVENT_NAME" = 'release' ]
+          then
+            TAG_NAME="${{ github.event.release.tag_name }}"
+          else
+            TAG_NAME="${{ github.ref }}"
+          fi
+          CLEAN_TAG=${TAG_NAME##*/}
+          VERSION=${CLEAN_TAG//v}
+        fi
+        echo "::set-output name=version::$VERSION"
+    - if: github.event_name == 'push'
+      name: Checkout current git repository
+      uses: actions/checkout@v2
+      with:
+        ref: main
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+    - name: Update package.json version to ${{ steps.load_version.outputs.version }}
+      uses: mikefarah/yq@v4.9.0
+      with:
+        cmd: |
+          yq e '.version = "${{ steps.load_version.outputs.version }}"' -i ${{ env.PACKAGE_JSON_FOLDER }}/package.json -j
+    - name: Commit new package.json version
+      run: |
+        git config --global user.email "bot@kirinus.digital"
+        git config --global user.name "kirinusbot"
+        git add ${{ env.PACKAGE_JSON_FOLDER }}/package.json
+        git commit -m "chore(): set package.json version ${{ steps.load_version.outputs.version }}"
+        git push origin main
+    - name: Publish NPM package
+      uses: JS-DevTools/npm-publish@v1
+      with:
+        access: public
+        package: ./package.json
+        registry: https://registry.npmjs.org
+        token: ${{ secrets.NPM_PUBLISH_TOKEN }}
