@@ -44,12 +44,9 @@ jobs:
           VERSION=${CLEAN_TAG//v}
         fi
         echo "::set-output name=version::$VERSION"
-    - if: github.event_name == 'push'
-      name: Checkout current git repository
-      uses: actions/checkout@v2
-      with:
-        ref: main
-        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+    - name: Checkout main branch
+      run: |
+        git checkout main
     - name: Update package.json version to ${{ steps.load_version.outputs.version }}
       uses: mikefarah/yq@v4.9.0
       with:
