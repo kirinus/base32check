@@ -1,6 +1,8 @@
 global:
   values:
     public: true
+    release:
+      draft: true
     ytt:
       template_paths: remote/ytt
   workflows:

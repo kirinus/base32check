@@ -38,7 +38,7 @@ jobs:
       uses: darioblanco/workflow-generator@main
       with:
         outputFiles: this/.github/workflows
-        templatePaths: remote/ytt,this/.github/overlays
+        templatePaths: remote/ytt
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Copy common configuration files
       run: |
