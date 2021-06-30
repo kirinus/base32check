@@ -1924,7 +1924,7 @@ __metadata:
     eslint-plugin-promise: ^5.1.0
     eslint-plugin-unicorn: ^34.0.0
     husky: ^6.0.0
-    jest: ^27.0.4
+    jest: ^27.0.6
     jest-environment-node: ^27.0.6
     prettier: ^2.3.1
     prettier-eslint: ^12.0.0
@@ -4604,7 +4604,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"jest@npm:^27.0.4":
+"jest@npm:^27.0.6":
   version: 27.0.6
   resolution: "jest@npm:27.0.6"
   dependencies:
