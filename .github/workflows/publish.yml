@@ -44,9 +44,6 @@ jobs:
           VERSION=${CLEAN_TAG//v}
         fi
         echo "::set-output name=version::$VERSION"
-    - name: Checkout main branch
-      run: |
-        git checkout main
     - name: Update package.json version to ${{ steps.load_version.outputs.version }}
       uses: mikefarah/yq@v4.9.0
       with:
@@ -57,8 +54,12 @@ jobs:
         git config --global user.email "bot@kirinus.digital"
         git config --global user.name "kirinusbot"
         git add ${{ env.PACKAGE_JSON_FOLDER }}/package.json
-        git commit -m "chore(): set package.json version ${{ steps.load_version.outputs.version }}"
-        git push origin main
+        git commit -m "chore: set package.json version ${{ steps.load_version.outputs.version }}"
+    - name: Push changes to current git repository
+      uses: ad-m/github-push-action@057a6ba835d986bfe495dd476a6c4db1d5f9503c
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
     - name: Publish NPM package
       uses: JS-DevTools/npm-publish@v1
       with:
