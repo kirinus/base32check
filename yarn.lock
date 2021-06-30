@@ -1926,7 +1926,7 @@ __metadata:
     husky: ^6.0.0
     jest: ^27.0.6
     jest-environment-node: ^27.0.6
-    prettier: ^2.3.1
+    prettier: ^2.3.2
     prettier-eslint: ^12.0.0
     pretty-quick: ^3.1.1
     ts-jest: ^27.0.3
@@ -5691,7 +5691,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.0.0, prettier@npm:^2.3.1":
+"prettier@npm:^2.0.0, prettier@npm:^2.3.2":
   version: 2.3.2
   resolution: "prettier@npm:2.3.2"
   bin:
