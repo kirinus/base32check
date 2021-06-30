@@ -30,11 +30,11 @@ Example:
 ```js
 import { compute, validate } from 'base32check1';
 
-compute('CONSECRATIO'); // returns 'X'
-validate('CONSECRATIO'); // returns false
+compute('CONSECRATIO'); // 'X'
+validate('CONSECRATIO'); // false
 
-compute('CAFEDEAD'); // returns 'A'
-validate('CAFEDEAD'); // returns true
+compute('CAFEDEAD'); // 'A'
+validate('CAFEDEAD'); // true
 ```
 
 ### Codes
@@ -59,14 +59,14 @@ import * as base32Decode from 'base32-decode';
 
 const data = new Uint8Array([0x74, 0x65, 0x73, 0x74]);
 
-base32Encode(data, 'Crockford'); // returns 'EHJQ6X0'
-base32Decode('EHJQ6X0', 'Crockford'); // returns ArrayBuffer { 4 }
+base32Encode(data, 'Crockford'); // 'EHJQ6X0'
+base32Decode('EHJQ6X0', 'Crockford'); // ArrayBuffer { 4 }
 
-base32Encode(data, 'RFC4648'); // returns 'ORSXG5A='
-base32Decode('ORSXG5A=', 'RFC4648'); // returns ArrayBuffer { 4 }
+base32Encode(data, 'RFC4648'); // 'ORSXG5A='
+base32Decode('ORSXG5A=', 'RFC4648'); // ArrayBuffer { 4 }
 
-base32Encode(data, 'RFC4648-HEX'); // returns 'EHIN6T0='
-base32Decode('EHIN6T0=', 'FC4648-HEX'); // returns ArrayBuffer { 4 }
+base32Encode(data, 'RFC4648-HEX'); // 'EHIN6T0='
+base32Decode('EHIN6T0=', 'FC4648-HEX'); // ArrayBuffer { 4 }
 ```
 
 ## Changelog
