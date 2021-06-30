@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:4.28.1"],
             ["base32check1", "link:./src::locator=base32check1%40workspace%3A."],
             ["danger", "npm:10.6.6"],
-            ["danger-plugin-kirinus", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.2"],
+            ["danger-plugin-kirinus", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.3"],
             ["eslint", "npm:7.29.0"],
             ["eslint-config-kirinus", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.1"],
             ["eslint-plugin-eslint-comments", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:3.2.0"],
@@ -3003,7 +3003,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:4.28.1"],
             ["base32check1", "link:./src::locator=base32check1%40workspace%3A."],
             ["danger", "npm:10.6.6"],
-            ["danger-plugin-kirinus", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.2"],
+            ["danger-plugin-kirinus", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.3"],
             ["eslint", "npm:7.29.0"],
             ["eslint-config-kirinus", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.1"],
             ["eslint-plugin-eslint-comments", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:3.2.0"],
@@ -3747,22 +3747,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["danger-plugin-kirinus", [
-        ["npm:1.0.2", {
-          "packageLocation": "./.yarn/cache/danger-plugin-kirinus-npm-1.0.2-6a3318f510-94981a902e.zip/node_modules/danger-plugin-kirinus/",
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/danger-plugin-kirinus-npm-1.0.3-401c8c610a-06fc6848d9.zip/node_modules/danger-plugin-kirinus/",
           "packageDependencies": [
-            ["danger-plugin-kirinus", "npm:1.0.2"]
+            ["danger-plugin-kirinus", "npm:1.0.3"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.2", {
-          "packageLocation": "./.yarn/__virtual__/danger-plugin-kirinus-virtual-a4780bdd22/0/cache/danger-plugin-kirinus-npm-1.0.2-6a3318f510-94981a902e.zip/node_modules/danger-plugin-kirinus/",
+        ["virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.3", {
+          "packageLocation": "./.yarn/__virtual__/danger-plugin-kirinus-virtual-0bd0a59b7c/0/cache/danger-plugin-kirinus-npm-1.0.3-401c8c610a-06fc6848d9.zip/node_modules/danger-plugin-kirinus/",
           "packageDependencies": [
-            ["danger-plugin-kirinus", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.2"],
-            ["@commitlint/lint", null],
+            ["danger-plugin-kirinus", "virtual:71d53cc19ffb9af0d4277de4a5f4bd6fead62a863c0a7820026a5832cac6dbe1457b664b99cec6770696ff44c8ebdde42a8343559af0c5280e01d7b20acdc8ec#npm:1.0.3"],
+            ["@commitlint/config-conventional", "npm:12.1.4"],
+            ["@commitlint/lint", "npm:12.1.4"],
+            ["@commitlint/types", "npm:12.1.4"],
             ["@types/commitlint__lint", null]
           ],
           "packagePeers": [
-            "@commitlint/lint",
             "@types/commitlint__lint"
           ],
           "linkType": "HARD",
