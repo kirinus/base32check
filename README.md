@@ -19,7 +19,7 @@ computed by this library are different from the ones computed by [base32check](h
 Install:
 
 ```sh
-#npm
+# npm
 npm install base32check
 # yarn
 yarn add base32check
@@ -45,7 +45,7 @@ and [base32-decode](https://github.com/LinusU/base32-encode) libraries.
 Install:
 
 ```js
-#npm
+# npm
 npm install base32-encode base32-decode
 # yarn
 yarn add base32-encode base32-decode
