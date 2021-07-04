@@ -1188,6 +1188,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "@types/node@npm:16.0.0"
+  checksum: 57e5731ba8d64d9a6434c69f1153186b7fc1b0f58ae54f3eb8c32cd122e87e9aca35947f62e92e1902027994dac97b5bff7cce4d9c56cb319f07f694fe55d012
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.0
   resolution: "@types/normalize-package-data@npm:2.4.0"
@@ -1879,6 +1886,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"base32-decode@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "base32-decode@npm:1.0.0"
+  checksum: db910d7187010ca41892f4316947241be65dd14456a9f06e87c1e113ed4421627e17087d0d45afe6b757567600aeb3d823074a1cb7f7acffdcd08ccb25634e78
+  languageName: node
+  linkType: hard
+
+"base32-encode@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "base32-encode@npm:1.2.0"
+  dependencies:
+    to-data-view: ^1.1.0
+  checksum: b8df667599d50b2c9fca206fcab9bf6500d2e980b14da204eb7de5ce978c99e4874e8138d109bd88d5bca1bfb5ae83926bca37b084d2c9842f8acb12b4b839d9
+  languageName: node
+  linkType: hard
+
 "base32check1@link:./src::locator=base32check1%40workspace%3A.":
   version: 0.0.0-use.local
   resolution: "base32check1@link:./src::locator=base32check1%40workspace%3A."
@@ -1892,7 +1915,10 @@ __metadata:
     "@commitlint/cli": ^12.1.4
     "@commitlint/config-conventional": ^12.1.4
     "@types/jest": ^26.0.23
+    "@types/node": ^16.0.0
     "@typescript-eslint/eslint-plugin": ^4.28.1
+    base32-decode: ^1.0.0
+    base32-encode: ^1.2.0
     base32check1: "link:./src"
     danger: ^10.6.4
     danger-plugin-kirinus: ^1.0.3
@@ -1905,6 +1931,7 @@ __metadata:
     eslint-plugin-ordered-imports: ^0.5.0
     eslint-plugin-promise: ^5.1.0
     eslint-plugin-unicorn: ^34.0.0
+    hex-to-array-buffer: ^1.1.0
     husky: ^6.0.0
     jest: ^27.0.6
     jest-environment-node: ^27.0.6
@@ -4039,6 +4066,13 @@ fsevents@^2.3.2:
   version: 1.0.0
   resolution: "hasurl@npm:1.0.0"
   checksum: 2ce603c3f2afc3708443af0de582c0eda1b8a0d2d7d6e99698ae0aa3f563baba5aa28fa2bdc6d5834cbea3ebfbf8ad45cb975cc58d9d3b499b1c5f69a071bf95
+  languageName: node
+  linkType: hard
+
+"hex-to-array-buffer@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "hex-to-array-buffer@npm:1.1.0"
+  checksum: 2c1dd006f9c9910bfe2893d7ab746e2455bab452d3f513464b2704787c72a1df0245a1d0ebd643378fec2d84f0099e26405479af7827fd41b274fac07cb9a291
   languageName: node
   linkType: hard
 
@@ -7831,6 +7865,13 @@ fsevents@^2.3.2:
   version: 1.0.4
   resolution: "tmpl@npm:1.0.4"
   checksum: 72c93335044b5b8771207d2e9cf71e8c26b110d0f0f924f6d6c06b509d89552c7c0e4086a574ce4f05110ac40c1faf6277ecba7221afeb57ebbab70d8de39cc4
+  languageName: node
+  linkType: hard
+
+"to-data-view@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "to-data-view@npm:1.1.0"
+  checksum: 53bf818cf7ed4b481568085cfed5528b268efe1e95d0b90c2a45031de9cf40de91600771c046924348fdedbedb54f655f98e7bf1c51041ba06f0ec3f2fd53dc6
   languageName: node
   linkType: hard
 

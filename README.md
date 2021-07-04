@@ -25,7 +25,9 @@ npm install base32check1
 yarn add base32check1
 ```
 
-Example:
+### Checksums
+
+To compute and validate checksums:
 
 ```js
 import { compute, validate } from 'base32check1';
@@ -37,36 +39,29 @@ compute('CAFEDEAD'); // 'A'
 validate('CAFEDEAD'); // true
 ```
 
-### Codes
+### Codecs
 
-For Base34 codecs, take a look at the [base32-decode](https://github.com/LinusU/base32-decode)
+To encode and decode Base32 data, `base32check1` wraps
+[base32-decode](https://github.com/LinusU/base32-decode)
 and [base32-decode](https://github.com/LinusU/base32-encode) libraries.
 
-Install:
-
 ```js
-# npm
-npm install base32-encode base32-decode
-# yarn
-yarn add base32-encode base32-decode
-```
-
-Usage:
-
-```js
-import * as base32Encode from 'base32-encode';
-import * as base32Decode from 'base32-decode';
+import { decode, encode } from 'base32check1;
 
 const data = new Uint8Array([0x74, 0x65, 0x73, 0x74]);
 
-base32Encode(data, 'Crockford'); // 'EHJQ6X0'
-base32Decode('EHJQ6X0', 'Crockford'); // ArrayBuffer { 4 }
+// Crockford
+decode('EHJQ6X0'); // ArrayBuffer { 4 }
+encode(data); // 'EHJQ6X0'
 
-base32Encode(data, 'RFC4648'); // 'ORSXG5A='
-base32Decode('ORSXG5A=', 'RFC4648'); // ArrayBuffer { 4 }
+// RFC4648
+encode(data, { variant: 'RFC4648' }); // 'ORSXG5A='
+decode('ORSXG5A=', { variant: 'RFC4648' }); // ArrayBuffer { 4 }
 
-base32Encode(data, 'RFC4648-HEX'); // 'EHIN6T0='
-base32Decode('EHIN6T0=', 'FC4648-HEX'); // ArrayBuffer { 4 }
+// RFC4648-HEX
+encode(data, { variant: 'RFC4648-HEX' }); // 'EHIN6T0='
+encode(data, { variant: 'RFC4648-HEX', padding: false }); // 'EHIN6T0'
+decode('EHIN6T0=', { variant: 'RFC4648-HEX' }); // ArrayBuffer { 4 }
 ```
 
 ## Changelog

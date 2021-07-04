@@ -1,6 +1,6 @@
-import { compute, validate } from 'base32check1';
+import { compute, validate } from '../src/checksum';
 
-describe('base34check1', () => {
+describe('base34check1 checksum', () => {
   /* eslint-disable @typescript-eslint/naming-convention */
   const payloadToCheck1 = {
     '': 'A',
