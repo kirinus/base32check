@@ -23,7 +23,7 @@
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "build": "webpack --progress",
+    "build": "tsc --build tsconfig.build.json",
     "lint": "eslint ./src/**/*.ts",
     "prepare": "yes | yarn husky install",
     "test": "jest --coverage"
@@ -56,9 +56,6 @@
     "prettier-eslint": "^12.0.0",
     "pretty-quick": "^3.1.1",
     "ts-jest": "^27.0.3",
-    "ts-loader": "^9.2.3",
-    "typescript": "^4.3.4",
-    "webpack": "^5.41.1",
-    "webpack-cli": "^4.7.2"
+    "typescript": "^4.3.4"
   }
 }
