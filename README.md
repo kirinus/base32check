@@ -20,9 +20,9 @@ Install:
 
 ```sh
 # npm
-npm install base32check
+npm install base32check1
 # yarn
-yarn add base32check
+yarn add base32check1
 ```
 
 Example:
