@@ -1920,7 +1920,7 @@ __metadata:
     base32-decode: ^1.0.0
     base32-encode: ^1.2.0
     base32check1: "link:./src"
-    danger: ^10.6.4
+    danger: ^10.6.6
     danger-plugin-kirinus: ^1.0.3
     eslint: ^7.29.0
     eslint-config-kirinus: ^1.0.1
@@ -2544,7 +2544,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"danger@npm:^10.6.4":
+"danger@npm:^10.6.6":
   version: 10.6.6
   resolution: "danger@npm:10.6.6"
   dependencies:
