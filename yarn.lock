@@ -1975,7 +1975,7 @@ __metadata:
     eslint-plugin-node: ^11.1.0
     eslint-plugin-ordered-imports: ^0.5.0
     eslint-plugin-promise: ^5.1.0
-    eslint-plugin-unicorn: ^34.0.0
+    eslint-plugin-unicorn: ^34.0.1
     hex-to-array-buffer: ^1.1.0
     husky: ^7.0.2
     jest: ^27.0.6
@@ -3220,9 +3220,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^34.0.0":
-  version: 34.0.0
-  resolution: "eslint-plugin-unicorn@npm:34.0.0"
+"eslint-plugin-unicorn@npm:^34.0.1":
+  version: 34.0.1
+  resolution: "eslint-plugin-unicorn@npm:34.0.1"
   dependencies:
     ci-info: ^3.2.0
     clean-regexp: ^1.0.0
@@ -3238,7 +3238,7 @@ __metadata:
     semver: ^7.3.5
   peerDependencies:
     eslint: ">=7.28.0"
-  checksum: 106468284e3cbc74cd99075bf913b28ce543ee90548ee68b93c4bc264edb1e406c6cb340c8e6419e0466bf1c404af2fbdf40958f425fc2c4c33f9d3f62dd8926
+  checksum: c0dd20f62f78104d21cb897bdee13f88277fc08ccaaad35382470e5d626af075e48bd7d0da564b7d656d3237fa7d3eee3063d07f5af4091bdce400c8b9c47601
   languageName: node
   linkType: hard
 
