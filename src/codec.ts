@@ -26,7 +26,7 @@ export function decode(
   payload: string,
   { variant = Base32Variant.Crockford }: Base32DecodeOptions = {},
 ): ArrayBuffer {
-  return base32Decode(payload, variant);
+  return base32Decode(payload, variant) as ArrayBuffer;
 }
 
 /**
@@ -39,5 +39,5 @@ export function encode(
   payload: ArrayBuffer | Uint8Array | Int8Array | Uint8ClampedArray,
   { padding, variant = Base32Variant.Crockford }: Base32EncodeOptions = {},
 ): string {
-  return base32Encode(payload, variant, { padding });
+  return base32Encode(payload, variant, { padding }) as string;
 }
