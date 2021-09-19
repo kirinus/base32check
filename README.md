@@ -66,4 +66,4 @@ decode('EHIN6T0=', { variant: 'RFC4648-HEX' }); // ArrayBuffer { 4 }
 
 ## Changelog
 
-See the GitHub [release history](https://github.com/kirinus/base32check/releases).
+See the GitHub [release history](https://github.com/kirinus/base32check1-js/releases).
