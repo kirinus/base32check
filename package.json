@@ -42,7 +42,7 @@
     "danger": "^10.6.6",
     "danger-plugin-kirinus": "^1.0.3",
     "eslint": "^7.29.0",
-    "eslint-config-kirinus": "^1.0.1",
+    "eslint-config-kirinus": "^1.0.5",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.3.6",
