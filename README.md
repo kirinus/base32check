@@ -1,4 +1,4 @@
-# base32check1
+# base32check1-js
 
 ![test](https://github.com/kirinus/base32check1/actions/workflows/library.yml/badge.svg?branch=main)
 ![publish](https://github.com/kirinus/base32check1/actions/workflows/publish.yml/badge.svg)
