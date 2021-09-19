@@ -51,7 +51,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-unicorn": "^34.0.0",
     "hex-to-array-buffer": "^1.1.0",
-    "husky": "^6.0.0",
+    "husky": "^7.0.2",
     "jest": "^27.0.6",
     "jest-environment-node": "^27.0.6",
     "prettier": "^2.3.2",
