@@ -30,7 +30,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=v14.17.1"
+    "node": ">=v14.18.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
